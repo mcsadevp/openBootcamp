@@ -1,16 +1,5 @@
-import React from 'react'
 
-
-function PartComponent(props) {
-  return (
-    <div>
-        <p>
-        {props.part} {props.exercises}
-      </p>
-    </div>
-  )
-}
-
-
+const PartComponent = props =>
+<p>{props.part} {props.exercises}</p>
 
 export default PartComponent

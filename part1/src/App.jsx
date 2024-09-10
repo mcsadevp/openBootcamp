@@ -13,23 +13,15 @@ const App = () => {
   const exercises3 = 14
 
   return (
-    <div>
-      <h1> <HeadCopmponent course={course} /> </h1>
-      <section>
-        <PartComponent part = {part1} exercises = {exercises1}/>
-        <PartComponent part = {part2} exercises = {exercises2}/>
-        <PartComponent part = {part3} exercises = {exercises3}/>
-      </section>
-     {/* <section>
+    <>
+       <HeadCopmponent course={course} />  
         <ContentComponent
           part1={part1} exercises1={exercises1}
           part2={part2} exercises2={exercises2}
           part3={part3} exercises3={exercises3} />
-      </section>*/}
-     <section>
       <TotalComponent exercises1 = {exercises1}  exercises2={exercises2} exercises3={exercises3} />
-     </section>
-    </div>
+   
+    </>
   )
 }
 

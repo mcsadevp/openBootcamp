@@ -1,18 +1,10 @@
-import React from 'react'
-
 
 const ContentComponent = props => {
   return (
     <div>
-        <p>
-        {props.part1} {props.exercises1}
-      </p>
-      <p>
-        {props.part2} {props.exercises2}
-      </p>
-      <p>
-        {props.part3} {props.exercises3}
-      </p>
+        <PartComponent part = {props.part1} exercises = {props.exercises1}/>
+        <PartComponent part = {props.part2} exercises = {props.exercises2}/>
+        <PartComponent part = {props.part3} exercises = {props.exercises3}/>
     </div>
   )
 }
