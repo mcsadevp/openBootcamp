@@ -1,5 +1,5 @@
+const HeadComponent = ({ course }) => {
+    return <h1>{course.name}</h1>;
+  }
 
-const HeadCopmponent = props => 
-<h1>{props.course}</h1>
-
-export default HeadCopmponent
+export default HeadComponent
