@@ -1,13 +1,14 @@
 
-const ContentComponent = ({ course }) => {
+const ContentComponent = ({ parts }) => {
   return (
     <div>
-      {course.parts.map((part, index) => (
+      {parts.map((part, index) => (
         <p key={index}>{part.name} {part.exercises}</p>
       ))}
     </div>
-  );
+  )
 }
+
 
 
 
